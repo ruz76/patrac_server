@@ -21,7 +21,7 @@ nohup python3 gina_get_positions.py &
 # HTTP server
 cd /root/app
 mkdir /var/www/html/patrac
-cp ../*.php /var/www/html/patrac/
+cp *.php /var/www/html/patrac/
 chown -R www-data:www-data /var/www/html/patrac/
 mkdir /var/local/patrac/
 chown www-data:www-data /var/local/patrac/
