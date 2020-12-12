@@ -19,3 +19,4 @@ INSERT INTO users (sessionid, id, name, status, role) VALUES ('hs10447', 'hs1044
 INSERT INTO users (sessionid, id, name, status, role) VALUES ('hs10448', 'hs10448', 'psovod3', 'waiting', 'HS');
 INSERT INTO users (sessionid, id, name, status, role) VALUES ('hs10422', 'hs10422', 'Vladimír Makeš', 'waiting', 'HS');
 INSERT INTO users (sessionid, id, name, status, role) VALUES ('1249377d9fa75562ed02bb804927fbfef58e8d45', 'pcr007', 'CR JB', 'waiting', 'registered');
+UPDATE users SET lon = 0, lat = 0, searchid = '';
