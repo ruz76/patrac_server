@@ -1,5 +1,5 @@
 <?php
-$_USER = "__USER__";
-$_PASSWORD = "__PASSWORD__";
-$_DBNAME = "__DBNAME__";
+$_USER = "patrac";
+$_PASSWORD = "XaPforTesting";
+$_DBNAME = "patrac";
 ?>

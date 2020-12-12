@@ -3,9 +3,9 @@ import psycopg2
 import time, math, io
 from datetime import datetime
 
-user = '__USER__'
-password = '__PASSWORD__'
-db_name = '__DBNAME__'
+user = 'patrac'
+password = 'XaPforTesting'
+db_name = 'patrac'
 gina_key = '__GINAKEY__'
 
 def getPositionAndSearchId(conn, sessionid):
