@@ -33,10 +33,18 @@ function closeSearch() {
     if (!ctype_alnum($_REQUEST["searchid"])) {
         die("E;closeSearch:1");
     }
-    $SQL = "UPDATE searches SET status = 'closed' WHERE searchid = '".$_REQUEST["searchid"]."'";
-    pg_query($SQL) or die("E;closeSearch:2");
+    $accesskey = '';
+    if (isset($_REQUEST["accesskey"])) {
+        if (!ctype_alnum($_REQUEST["accesskey"])) {
+            die("E;closeSearch:2");
+        } else {
+            $accesskey = $_REQUEST["accesskey"];
+        }
+    }
+    $SQL = "UPDATE searches SET status = 'closed', accesskey = '".$accesskey."' WHERE searchid = '".$_REQUEST["searchid"]."'";
+    pg_query($SQL) or die("E;closeSearch:3");
     $SQL = "UPDATE users SET status = 'waiting', arrive = '', searchid = '' WHERE searchid = '".$_REQUEST["searchid"]."'";
-    pg_query($SQL) or die(mysqli_error("E;closeSearch:3"));
+    pg_query($SQL) or die(mysqli_error("E;closeSearch:4"));
 }
 
 if (!isset($_REQUEST["operation"])) {

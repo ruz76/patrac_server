@@ -120,7 +120,8 @@ CREATE TABLE public.searches (
     description character varying(255),
     region character varying(2),
     name character varying(255),
-    version integer
+    version integer,
+    accesskey character varying(50)
 );
 
 
