@@ -1,5 +1,11 @@
 # Patrac server
 
+## Support
+Výstupy vznikly v rámci projektu číslo VI20172020088 „Využití vyspělých technologií a čichových schopností psů pro zvýšení efektivity vyhledávání pohřešovaných osob v terénu“
+(dále jen „projekt Pátrač“), který byl řešen v období 2017 až 2021
+s finanční podporou Ministerstva vnitra ČR z programu bezpečnostního výzkumu.
+
+## Description
 This server was used quite often when PoC of Android app was used.
 Now it is used for some purposes:
 
