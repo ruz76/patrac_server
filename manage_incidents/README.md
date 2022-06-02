@@ -1,6 +1,6 @@
-# get geojson ecr from s3
+# Manage incidents
 
-Lambda microservice thar reads GeoJSON of ECR for specified month and version from S3
+Lambda microservice thar allows to store incident in DynamoDB and delete all test incidents older than 5 days.
 
 ## Setup
 
