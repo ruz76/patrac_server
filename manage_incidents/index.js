@@ -109,6 +109,7 @@ async function createIncident(accessKey, GinaGUID, type) {
  */
 module.exports.manageincident = async (event, context, callback) => {
   try {
+    console.log(event);
     let operation = JSON.parse(event.body)['operation'];
     let status = ['OK']
     if (operation === 'create') {
